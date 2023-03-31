@@ -1,7 +1,2 @@
-# IDE
-.idea
-.DS_Store
 .vscode
-
-# generated folders
-node_modules
+.idea
