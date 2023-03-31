@@ -5,3 +5,7 @@
 
 # generated folders
 node_modules
+
+# Parcel
+dist
+.parcel-cache
