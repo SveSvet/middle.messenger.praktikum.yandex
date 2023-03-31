@@ -1,2 +1,11 @@
-.vscode
+# IDE
 .idea
+.DS_Store
+.vscode
+
+# generated folders
+node_modules
+
+# Parcel
+dist
+.parcel-cache
