@@ -1,0 +1,31 @@
+@import "../../styles/constants.pcss";
+
+.chat-component {
+  display: grid;
+  grid-gap: 10px;
+  align-items: center;
+  grid-template-columns: 30px 1fr 10px;
+  grid-template-areas: "image chat-info message-info";
+
+  width: 290px;
+  height: 70px;
+  border-top: 1px solid var(--lightgrey);
+
+  @media (--tablet) {}
+
+  @media (--desktop) {
+    grid-template-columns: 50px 1fr 10px;
+  }
+}
+
+.chat-component__chat-image {
+  grid-area: image;
+}
+
+.chat-info {
+  grid-area: chat-info;
+}
+
+.message-info {
+  grid-area: message-info;
+}

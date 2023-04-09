@@ -1,12 +1,12 @@
 import Handlebars from 'handlebars';
 import tpl from 'bundle-text:./tpl.hbs';
-import './styles.pcss';
+import './styles.css';
 
 const comp = Handlebars.compile(tpl);
 
-export const textComponent = (textClass, text) => {
+export const blobComponent = (titleClass, title) => {
   return comp({
-    textClass,
-    text
+    titleClass,
+    title
   });
 };

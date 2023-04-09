@@ -4,9 +4,9 @@ import './styles.pcss';
 
 const comp = Handlebars.compile(tpl);
 
-export const textComponent = (textClass, text) => {
+export const buttonComponent = (buttonClass, text) => {
   return comp({
-    textClass,
-    text
+    buttonClass,
+    text,
   });
 };

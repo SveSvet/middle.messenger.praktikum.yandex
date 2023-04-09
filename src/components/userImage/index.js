@@ -4,9 +4,10 @@ import './styles.pcss';
 
 const comp = Handlebars.compile(tpl);
 
-export const textComponent = (textClass, text) => {
+export const userImageComponent = (imageClass, src, alt) => {
   return comp({
-    textClass,
-    text
+    imageClass,
+    src,
+    alt,
   });
 };

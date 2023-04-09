@@ -1,0 +1,51 @@
+@import "../../styles/constants.pcss";
+
+.button {
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--white);
+  font-family: var(--fontPrimary);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  outline: none;
+  border: none;
+  margin: 0;
+  transition: background-color .3s, border .3s, color .3s;
+  white-space: nowrap;
+
+  font-size: var(--FontSize14);
+  font-weight: 500;
+  line-height: 20px;
+  min-width: 40px;
+  width: 100%;
+  padding: 11px 35px;
+
+  &--main {
+    background-color: var(--blue);
+
+    &:hover {
+      background-color: var(--violet);
+    }
+
+    &:focus {
+      background-color: var(--deepBlue);
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: var(--blue);
+    border: none;
+    min-width: initial;
+    padding: 0;
+
+    &:hover {
+      color: var(--violet);
+    }
+
+    &:focus {
+      color: var(--deepBlue);
+    }
+  }
+}
