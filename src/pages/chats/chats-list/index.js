@@ -7,31 +7,48 @@ import { textComponent } from "../../../components/text";
 import { userImageComponent } from "../../../components/userImage";
 import { linkComponent } from "../../../components/link";
 import { chat } from "../../../smart-components/chat";
+import {chatsStub} from "../../../stubs/chat-stubs";
 
 // Components
-const image = userImageComponent(
+const _image = (url) => userImageComponent(
   'image-blob',
-  '',
+  url,
   'user-image'
 );
-const chatName = textComponent(
+const _chatName = (text) => textComponent(
   'text text--size-xs text--bold',
-  'Имя чата'
+  text
 );
-const chatPreview = textComponent(
+const _chatPreview = (previewText) => textComponent(
   'text text--size-xxs',
-  'Превью чата'
+  previewText
 );
-const date = textComponent(
+const _date = (date) => textComponent(
   'text text--size-xxs',
-  '10:10'
+  date
 );
 
 // Smart-components
-const renderChats = chat('chat-list-wrapper', chatName, image, chatPreview, date)
+const renderChats = chatsStub.map(
+  ({
+     chatName,
+     chatImage,
+     previewMessage,
+     date,
+     unreadMessage,
+     unreadMessageNumber
+  }) => {
+  return chat(
+    'chat-list-wrapper',
+    _chatName(chatName),
+    _image(chatImage),
+    _chatPreview(previewMessage),
+    _date(date)
+  );
+})
 
 // Create template
 const comp = Handlebars.compile(tpl);
 export const chatsLine = comp({
-  chats: renderChats,
+  chats: renderChats.join(''),
 });

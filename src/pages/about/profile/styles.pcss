@@ -1,0 +1,56 @@
+@import "../../../styles/constants.pcss";
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100vh;
+  margin: 0 auto;
+
+  @media (--tablet) {}
+
+  @media (--desktop) {
+    max-width: 510px;
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--indentL);
+  }
+
+  &__image-button {
+    outline: none;
+    border: none;
+
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__info-fields {
+    width: 100%;
+  }
+
+  &__info-fields {
+    margin-bottom: var(--indent4XL);
+  }
+
+  &__button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__button {
+    width: 100%;
+    margin-bottom: var(--indentS);
+    padding-bottom: var(--indentXS);
+    border-bottom: 1px solid var(--lightgrey);
+  }
+
+  &__button--border {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
