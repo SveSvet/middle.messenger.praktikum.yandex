@@ -1,7 +1,10 @@
 {
-  "name": "test",
+  "name": "chat-project",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": ">=14.5.0"
+  },
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html"

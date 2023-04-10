@@ -38,4 +38,4 @@ const template = comp({
   buttonLogout: logoutButton
 });
 
-document.getElementById('root').innerHTML = template;
+document.getElementById('profile').innerHTML = template;

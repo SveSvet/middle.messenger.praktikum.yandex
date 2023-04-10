@@ -49,4 +49,4 @@ const template = comp({
   loginButton,
 });
 
-document.getElementById('root').innerHTML = template;
+document.getElementById('login').innerHTML = template;

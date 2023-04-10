@@ -16,4 +16,4 @@ const template = comp({
   rightChildren: emptyWindowTemplate
 });
 
-document.getElementById('root').innerHTML = template;
+document.getElementById('chats').innerHTML = template;

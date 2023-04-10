@@ -36,4 +36,4 @@ const template = comp({
   saveButton
 });
 
-document.getElementById('root').innerHTML = template;
+document.getElementById('password-change').innerHTML = template;

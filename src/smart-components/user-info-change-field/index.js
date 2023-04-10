@@ -1,7 +1,7 @@
 import Handlebars from 'handlebars';
 import tpl from 'bundle-text:./tpl.hbs';
 import './styles.pcss';
-import {textComponent} from "../../components/text";
+import { textComponent } from "../../components/text";
 
 const comp = Handlebars.compile(tpl);
 

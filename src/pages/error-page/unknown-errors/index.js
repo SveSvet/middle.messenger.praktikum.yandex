@@ -27,4 +27,4 @@ const template = comp({
   children: `${errorTitle} ${errorDescription} ${link}`,
 });
 
-document.getElementById('root').innerHTML = template;
+document.getElementById('unknown-error').innerHTML = template;
