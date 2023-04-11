@@ -32,7 +32,8 @@ const registrationTitle = titleComponent(
 );
 const registrationButton = buttonComponent(
   'button button--main card__buttons--registration',
-  'Зарегистрироваться'
+  'Зарегистрироваться',
+  'submit'
 );
 const loginButton = buttonComponent(
   'button button--secondary',

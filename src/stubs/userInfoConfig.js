@@ -15,13 +15,13 @@ export const userInfoChangeStub = [
     leftField: 'Имя',
     inputValue: 'Иван',
     inputType: 'text',
-    inputName: 'firstName',
+    inputName: 'first_name',
   },
   {
     leftField: 'Фамилия',
     inputValue: 'Иванов',
     inputType: 'text',
-    inputName: 'secondName',
+    inputName: 'second_name',
   },
   {
     leftField: 'Имя в чате',

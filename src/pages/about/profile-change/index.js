@@ -12,7 +12,8 @@ import userStubImage from "../../../../static/image/user-stub.svg";
 // Components
 const saveButton = buttonComponent(
   'button button--main',
-  'Сохранить'
+  'Сохранить',
+  'submit'
 );
 const profileFields = userInfoChangeStub.map(
   ({ leftField,
