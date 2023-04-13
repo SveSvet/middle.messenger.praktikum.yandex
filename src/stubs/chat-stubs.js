@@ -1,0 +1,42 @@
+export const chatsStub = [
+  {
+    chatName: 'Имя чата',
+    chatImage: '',
+    previewMessage: 'Сообщение',
+    date: '10:10',
+    unreadMessage: false,
+    unreadMessageNumber: null,
+  },
+  {
+    chatName: 'Имя чата 2',
+    chatImage: '',
+    previewMessage: 'Сообщение',
+    date: '10:10',
+    unreadMessage: false,
+    unreadMessageNumber: null,
+  },
+  {
+    chatName: 'Имя чата 3',
+    chatImage: '',
+    previewMessage: 'Сообщение',
+    date: '10:10',
+    unreadMessage: false,
+    unreadMessageNumber: null,
+  },
+  {
+    chatName: 'Имя чата 4',
+    chatImage: '',
+    previewMessage: 'Сообщение',
+    date: '10:10',
+    unreadMessage: false,
+    unreadMessageNumber: null,
+  },
+  {
+    chatName: 'Имя чата 5',
+    chatImage: '',
+    previewMessage: 'Сообщение',
+    date: '10:10',
+    unreadMessage: false,
+    unreadMessageNumber: null,
+  },
+]

@@ -1,0 +1,34 @@
+@import "../../../styles/constants.pcss";
+@import "../../../styles/mixins.module.pcss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.container__card {
+  @mixin shadow-card;
+}
+
+.login-page {
+  @mixin login-card
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--login {
+    width: 100%;
+    margin-bottom: var(--indentM);
+  }
+}
+
+.form__inputs {
+  margin-bottom: var(--indent3XL);
+}

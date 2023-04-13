@@ -1,0 +1,24 @@
+@import "./constants.pcss";
+
+@define-mixin shadow-card {
+  max-width: 340px;
+  width: 100%;
+  padding: var(--indentS);
+
+  @media (--tablet) {}
+
+  @media (--desktop) {
+    padding: var(--indentM);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+  }
+}
+
+@define-mixin login-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: var(--indentM);
+  }
+}
